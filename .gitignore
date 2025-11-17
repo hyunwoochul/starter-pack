@@ -1,0 +1,144 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# environment
+.env*
+!.env.test
+!.env.test.local
+env/
+environment/
+
+# IDEs and editors
+.idea/
+.vscode/
+*.code-workspace
+.history
+*.swp
+*.swo
+
+# dependencies
+node_modules/
+
+# logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Package manager caches
+.npm/
+.yarn/
+.pnpm-store/
+
+# build output
+dist/
+build/
+out/
+tmp/
+temp/
+.cache/
+.next/
+.nuxt/
+.svelte-kit/
+.storybook-out/
+coverage/
+lib/
+.tsup
+tsbuildinfo.json
+*.tsbuildinfo
+.nyc_output/
+
+# Vim swap files
+.vimrc
+
+# Neovim config
+.nvimrc
+
+# npmrc files
+.npmrc
+
+# build-analytics
+.build-analytics
+
+# rollup-test output
+/modules/rollup-test/dist/
+
+# User specific bazel settings
+.bazelrc.user
+
+# User specific ng-dev settings
+.ng-dev.user*
+
+# cache files
+.cache
+.nx/cache
+.nx/workspace-data
+.angular/
+.swc/
+.turbo
+
+# Husky
+.husky/_
+
+# Vercel
+.vercel
+.now
+
+# Storybook / Documentation / Static site builds
+storybook-static/
+*storybook.log
+docs/
+.docusaurus/
+vite-dist/
+.eslintcache
+
+# Monorepo / Turborepo / Nx
+.turbo/
+nx-cache/
+.vscode-test/
+
+# Electron / Mobile / Expo
+dist-electron/
+dist-native/
+.expo/
+.expo-shared/
+web-build/
+
+# Hosting / Cloud / Deployment
+.firebase/
+.amplify/
+.vercel/
+.netlify/
+functions/lib/
+functions/node_modules/
+
+# pids
+pids
+*.cpuprofile
+*.heapsnapshot
+
+# sensitive data
+*.pem
+*.key
+*.crt
+*.p12
+*.jks
+*.pfx
+*.cer
+*.csr
+*.der
+*.p7b
+
+# Other
+!.github/actions/*/dist
+target
+packages/next/wasm/@next
+tarballs/
+packages/**/*.tgz
+.errors/
+/bazel-out
+/integration/bazel/bazel-*
+modules/ssr-benchmarks/node_modules/
