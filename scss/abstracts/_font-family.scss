@@ -1,0 +1,32 @@
+$font-asset-path: "../../assets"; // https://***
+
+@font-face {
+  font-family: "SpoqaHanSansNeo";
+  font-weight: 700;
+  src:
+    local("Spoqa Han Sans Neo Bold"),
+    url("#{$font-asset-path}/fonts/SpoqaHanSansNeoBold.woff2") format("woff2"),
+    url("#{$font-asset-path}/fonts/SpoqaHanSansNeoBold.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SpoqaHanSansNeo";
+  font-weight: 400;
+  src:
+    local("Spoqa Han Sans Neo Regular"),
+    url("#{$font-asset-path}/fonts/SpoqaHanSansNeoRegular.woff2")
+      format("woff2"),
+    url("#{$font-asset-path}/fonts/SpoqaHanSansNeoRegular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SpoqaHanSansNeo";
+  font-weight: 300;
+  src:
+    local("Spoqa Han Sans Neo Light"),
+    url("#{$font-asset-path}/fonts/SpoqaHanSansNeoLight.woff2") format("woff2"),
+    url("#{$font-asset-path}/fonts/SpoqaHanSansNeoLight.woff2") format("woff");
+  font-display: swap;
+}
