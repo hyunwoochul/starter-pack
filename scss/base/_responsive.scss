@@ -1,0 +1,25 @@
+@mixin pc {
+  @media all and (min-width: 768px) {
+    @content;
+  }
+}
+@mixin tablets {
+  @media all and (min-width: 768px) and (max-width: 979px) {
+    @content;
+  }
+}
+@mixin divideHalf {
+  @media all and (min-width: 768px) and (max-width: 1079px) {
+    @content;
+  }
+}
+@mixin portrait {
+  @media all and (min-width: 768px) and (max-width: 1080px) and (orientation: landscape) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media all and (max-width: 767px) {
+    @content;
+  }
+}
