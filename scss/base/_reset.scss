@@ -1,0 +1,285 @@
+/* You can add global styles to this file, and also import other style files */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html,
+body {
+  height: 100%;
+  -webkit-text-size-adjust: none; /* 크롬, 사파리, 오페라 신버전 */
+  -ms-text-size-adjust: none; /* IE */
+  -moz-text-size-adjust: none; /* 파이어폭스 */
+  -o-text-size-adjust: none; /* 오페라 구버전 */
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+body {
+  margin: 0;
+}
+
+strong {
+  font-weight: 400;
+}
+
+b {
+  font-weight: 400;
+}
+
+// ie에서 input remove 버튼 삭제하기
+//input::-ms-clear {
+//  display: none;
+//}
+
+// footer 100vw 대응을 위해
+body {
+  overflow-x: hidden;
+}
+
+input {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  box-shadow: none !important;
+  line-height: normal;
+}
+
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  box-shadow: none !important;
+  line-height: normal;
+}
+
+input::-webkit-input-placeholder {
+  line-height: normal !important;
+}
+
+// ie에서 input disabled의 백그라운드 배경
+input:disabled {
+  background-color: transparent;
+}
+
+//input::-webkit-input-placeholder {
+//  font-size: initial !important;
+//}
+//
+//input::-moz-placeholder {
+//  font-size: initial !important;
+//}
+//
+//// ie 전용
+////input:-ms-input-placeholder {
+////  font-size: initial !important;
+////}
+//
+//input:-moz-placeholder {
+//  font-size: initial !important;
+//}
+//
+//input::placeholder {
+//  font-size: initial !important;
+//}
+
+// 파이어폭스 input padding 문제 (구형 Firefox hack)
+//@-moz-document url-prefix() {
+//  input {
+//    padding: 12px 5px;
+//  }
+//}
+
+.a11y-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap; /* added line */
+}
+
+button {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0;
+
+  &:disabled {
+    cursor: default;
+  }
+}
+
+*[role="button"] {
+  cursor: pointer;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+.scroll-bar-none {
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none !important;
+  }
+  scrollbar-width: none;
+}
+
+// 클릭시 파란색으로 영역 표시 되는 부분 삭제 (전체로 할지는 고민중 *)
+*,
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
